@@ -164,6 +164,14 @@ h1,h2{
 	margin-top: -55px;
 	position: relative;
 	z-index: -1000;
+
+}
+.banner__img{
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+
+	animation: 10s infinite;
 }
 .banner:before{
 	content: '';
@@ -173,11 +181,6 @@ h1,h2{
 	background: rgba(0,0,0,0.5);
 	z-index: 1000;
 	top: 0;
-}
-.banner__img{
-	width: 100%;
-	height: 500px;
-	object-fit: cover;
 }
 .banner__content{
 	width: 90%;
@@ -324,6 +327,28 @@ aside a:hover{
 	position: relative;
 	top: 3px;
 	right: 5px;
+}
+
+
+@keyframes banner__img{
+	0%, 30%{
+		background-image: url(img/banner.jpg);
+		opacity: 1;
+	}
+	31%, 34%{
+		opacity: 0.1;
+	}
+	35%, 65%{
+		background-image: url(img/banner-gallery.jpg);
+		opacity: 1;
+	}
+	66%, 69%{
+		opacity: 0.1;
+	}
+	70%, 100%{
+		background-image: url(img/banner-contact.jpg);
+		opacity: 1;
+	}
 }
 
 
